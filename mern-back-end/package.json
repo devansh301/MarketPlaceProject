@@ -1,0 +1,24 @@
+{
+  "name": "mern-back-end",
+  "version": "1.0.0",
+  "description": "This is the backend of vet project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ecommerce",
+    "mern",
+    "project",
+    "backend",
+    "api",
+    "api"
+  ],
+  "author": "\"Devesh Kashyap\"",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-validator": "^6.15.0",
+    "mongoose": "^7.0.3"
+  }
+}
