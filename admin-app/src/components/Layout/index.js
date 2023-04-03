@@ -1,11 +1,11 @@
 import React, { useLayoutEffect } from 'react'
-
+import Header from '../Header';
 /**
 * @author
-* @function Header
+* @function Layout
 **/
 
-export const Layout = (props) => {
+const Layout = (props) => {
   return(
     <>
         <Header />
@@ -15,4 +15,4 @@ export const Layout = (props) => {
 
  }
 
- export default Layout;
+export default Layout;
