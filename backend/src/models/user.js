@@ -51,16 +51,20 @@ const userSchema = new mongoose.Schema({
 },{timestamps:true});
 
 
-// to hash the plain password
+// to hash the plain password and name it as password
 userSchema.virtual('password').set(function(password){
     this.hash_password = bcrypt.hashSync(password,10); 
 });
 
+// make full-name from first and last name
+userSchema.virtual('fullName').get(function(){
+    return `${this.firstName} ${this.lastName}`;
+});
 
 // to check the password
 // returns true of false
 userSchema.methods = {
-    authenticate: function(){
+    authenticate: function(password){
         return bcrypt.compareSync(password,this.hash_password);
     }
 };

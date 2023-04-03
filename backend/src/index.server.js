@@ -4,12 +4,14 @@ const env = require('dotenv');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 env.config();
-const userRoutes = require('./routes/user')
+const authRoutes = require('./routes/auth')
+const adminRoutes = require('./routes/admin/auth')
 
 
 
 mongoose.connect(
-    `mongodb+srv://${process.env.MONGO_DB_USER}:${process.env.MONGO_DB_PASSWORD}@cluster0.d8vixml.mongodb.net/?retryWrites=true&w=majority`,
+    //add username,password,database-name accordingly
+    `mongodb+srv://${process.env.MONGO_DB_USER}:${process.env.MONGO_DB_PASSWORD}@cluster0.d8vixml.mongodb.net/${process.env.MONGO_DB_DATABASE}?retryWrites=true&w=majority`,
     {
         useNewUrlParser:true,
         useUnifiedTopology:true,
@@ -21,13 +23,14 @@ mongoose.connect(
 
 
 
-app.use(bodyParser.urlencoded());
-// app.use(express.urlencoded({ extended: true }))  --> may include
+app.use(bodyParser.urlencoded({ extended: false }))
+// app.use(express.urlencoded({ extended: true }))  --> may include this
 app.use(bodyParser.json());
 
 
-
-app.use('/api',userRoutes);
+// routes for users and admins
+app.use('/api',authRoutes);
+app.use('/api',adminRoutes);
 
 
 
