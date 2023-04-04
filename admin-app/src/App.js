@@ -1,6 +1,7 @@
 import React from 'react'
 import {BrowserRouter as Router,Route,Routes} from 'react-router-dom'
 import './App.css';
+import Layout from './components/Layout'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './container/Home'
@@ -9,6 +10,7 @@ import Signup from './container/Signup';
 
 
 function App() {
+<<<<<<< HEAD
     return (
         <div className='App'>
             <Router>
@@ -20,6 +22,15 @@ function App() {
             </Router>
         </div>
     );
+=======
+  return (
+    <div className="App">
+      <Layout>
+        <h1>Hello World</h1>
+      </Layout>
+    </div>
+  );
+>>>>>>> adff7bed8222a481dd268f859feb43ade255dc1c
 }
 
 export default App;
