@@ -32,5 +32,16 @@ MedVet is built using the following technologies:
 
 To run the MedVet application locally, follow these steps:
 
-1. Clone the repository:
+1. Clone the repository: git clone https://github.com/devansh301/MarketPlaceProject.git
+2. Navigate to the project directory: cd MarketPlaceProject
+3. Install the required dependencies: npm install
+4. Start the application: npm start
+5. Access the application by visiting `http://localhost:3000` in your web browser.
+
+Made as a part of hackathon by - Mohit Gupta , Bhargab Dhungel , Devesh Kashyap , Devansh , Ravneet Singh
+
+
+
+
+
 
