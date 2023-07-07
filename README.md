@@ -10,7 +10,7 @@ MedVet is a web application designed to provide veterinary consulting and produc
 
 - **General Pet Care:** MedVet provides comprehensive resources and tips on general pet care, including nutrition, exercise, grooming, and overall pet wellness.
 
-- **ChatBOT Assistance:** The app incorporates a ChatBOT feature to assist users with frequently asked questions and provide guidance on common pet diseases and health concerns.
+- **ChatBOT Assistance:** The app incorporates a ChatGPT feature to assist users with frequently asked questions and provide guidance on common pet diseases and health concerns.
 
 ## Tech Stack
 
